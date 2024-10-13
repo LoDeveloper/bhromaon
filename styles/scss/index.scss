@@ -232,9 +232,6 @@ body {
 /*Media queries*/
 
 @media screen and (max-width: 1000px) {
-    body {
-
-    }
 
     nav {
         width: 100%;
@@ -331,10 +328,7 @@ body {
 
 
 @media screen and (max-width: 600px) {
-    body {
-
-    }
-
+ 
     .navbar {
         flex-direction: flex;
         justify-content: space-between;
