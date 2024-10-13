@@ -1,3 +1,30 @@
+.text-block {
+  width: 30%;
+}
+.text-block h3 {
+  font-family: "Aleo", serif;
+  padding-bottom: 20px;
+}
+.text-block p {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.text-block .main-btn {
+  background-color: #5474FD;
+  color: #fff;
+  border: none;
+  width: 228px;
+  height: 63px;
+  margin-top: 50px;
+}
+.text-block .main-btn:hover {
+  background-color: #041561;
+  color: #5474FD;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -237,6 +264,28 @@ nav {
   color: #00A2FF;
   height: 60px;
   width: 60px;
+}
+
+/*What we do */
+.what-we-do {
+  background-image: url(/images/house-img.png);
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.what-we-do .text-block {
+  background-color: rgba(51, 51, 51, 0.8);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 371px;
+  width: 540px;
+  padding: 30px;
 }
 
 /*Fonts

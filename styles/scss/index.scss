@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'text-block';
 
 * {
     box-sizing: border-box;
@@ -213,6 +214,25 @@ nav {
         height: 60px;
         width: 60px;
     }
+}
+
+/*What we do */
+
+.what-we-do {
+    background-image: url(/images/house-img.png);
+    height: 700px;
+    display: flex;
+    padding-left: 20%;
+    align-items: center;
+
+    .text-block {
+        background-color: rgba(51, 51, 51, 0.8);
+        align-items: center;
+        height: 371px;
+        width: 540px;
+        padding: 30px;
+    }
+
 }
 
 
