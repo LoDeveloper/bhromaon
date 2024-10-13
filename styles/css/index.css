@@ -510,13 +510,38 @@ body {
   .nav-links {
     justify-self: flex-end;
   }
+  .nav-links li a {
+    font-size: 12px;
+    gap: 10px;
+  }
+  .form {
+    width: 70%;
+  }
   .who-we-are .container {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 5%;
+    gap: 20px;
+  }
+  .who-we-are .container .text-block h3 {
+    font-size: 22px;
+  }
+  .who-we-are .container .text-block p {
+    font-size: 14px;
+  }
+  .who-we-are .container .grid-container {
+    width: auto;
+  }
+  .who-we-are .container .grid-container img {
+    width: 88%;
   }
   .search-section {
     margin-left: 10px;
     margin-right: 10px;
+  }
+  .search-section i {
+    font-size: 40px;
+  }
+  .search-section h3 {
+    font-size: 20px;
   }
   .what-we-do {
     padding-left: 10%;
@@ -539,6 +564,149 @@ body {
   }
   .contact-us img {
     max-width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: flex;
+            flex-direction: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+  }
+  .navbar .nav-links {
+    display: none;
+  }
+  .form {
+    width: 70%;
+  }
+  .form .input-field {
+    font-size: 12px;
+  }
+  .form button {
+    width: 70%;
+    font-size: 12px;
+  }
+  .who-we-are {
+    height: auto;
+    padding-top: 20px;
+  }
+  .who-we-are .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 5%;
+    gap: 10px;
+  }
+  .who-we-are .container .text-block h3 {
+    font-size: 18px;
+  }
+  .who-we-are .container .text-block p {
+    font-size: 12px;
+  }
+  .who-we-are .container .grid-container {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .who-we-are .container .grid-container img {
+    width: 80%;
+  }
+  .who-we-are .container .main-btn {
+    width: 80%;
+  }
+  .what-we-do {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0;
+  }
+  .what-we-do .text-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+  }
+  .what-we-do .text-block h5 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .what-we-do .text-block p {
+    font-size: 14px;
+  }
+  .what-we-do .text-block .main-btn {
+    width: 50%;
+  }
+  .travel-with-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 0;
+  }
+  .travel-with-us .text-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+  }
+  .travel-with-us .text-block h5 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .travel-with-us .text-block p {
+    font-size: 14px;
+  }
+  .travel-with-us .text-block .main-btn {
+    width: 50%;
+  }
+  .contact-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-us h2 {
+    font-size: 28px;
+    padding: 20px;
+  }
+  .contact-us .contact-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100%;
+    margin: 0;
+    max-width: 80%;
+  }
+  .contact-us .contact-text p {
+    font-size: 12px;
+    max-width: 100%;
+  }
+  .contact-us img {
+    max-width: 100%;
   }
 }
 /*Fonts
