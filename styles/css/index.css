@@ -147,7 +147,6 @@ nav {
   background-color: #5474FD;
   color: #fff;
   font-family: "Aleo", serif;
-  gap: 10px;
   border: 1px solid #fff;
 }
 .form button:hover {
@@ -583,10 +582,13 @@ body {
   .navbar .nav-links {
     display: none;
   }
-  .navbar .nav-links i {
+  .navbar i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    color: #fff;
+    font-size: 35px;
+    margin-right: 10px;
   }
   .form {
     width: 70%;

@@ -55,7 +55,6 @@ nav {
         background-color: $mainColor;
         color: $fontColor;
         font-family: $primaryFont;
-        gap: 10px;
         border: 1px solid $fontColor;
             &:hover {
                 background-color: $hoverColor;
@@ -99,8 +98,9 @@ nav {
                 color: $hoverColor;
             }
       }
-
+      
       i {
         display: none;
       }
+
 }

@@ -343,11 +343,13 @@ body {
 
         .nav-links {
             display: none;
+        }
 
-            i {
-                display:flex;
-    
-            }
+        i {
+            display:flex;
+            color: #fff;
+            font-size: 35px;
+            margin-right: 10px;
         }
 
     }
