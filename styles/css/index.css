@@ -7,7 +7,7 @@
 }
 .text-block p {
   font-family: "Josefin Sans", sans-serif;
-  line-height: 1.5;
+  line-height: 2;
   font-size: 16px;
 }
 .text-block .main-btn {
@@ -36,6 +36,7 @@ body {
   color: #fff;
   background-color: #333333;
   height: 100vh;
+  margin: 10px;
 }
 
 /*Nav section*/
@@ -46,6 +47,7 @@ nav {
 
 .banner-container {
   background-image: url(/images/banner-img.png);
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,6 +152,7 @@ nav {
 /*Who we are section */
 .who-we-are {
   background-image: url(/images/who-we-are-img.png);
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,63 +166,106 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
   width: 100%;
 }
 .container .text-block {
-  width: 30%;
+  width: 40%;
 }
 .container .text-block h3 {
-  font-family: "Aleo", serif;
-  padding-bottom: 20px;
+  font-size: 36px;
 }
-.container .text-block p {
-  font-family: "Josefin Sans", sans-serif;
-  line-height: 1.5;
-  font-size: 16px;
-}
-.container .text-block .main-btn {
-  background-color: #5474FD;
-  color: #fff;
-  border: none;
-  width: 228px;
-  height: 63px;
-  margin-top: 50px;
-}
-.container .text-block .main-btn:hover {
-  background-color: #041561;
-  color: #5474FD;
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 1fr 10px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.img-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
-  width: 40%;
+.grid-container > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
 }
-.img-container .img-top {
-  float: left;
+
+.grid-container > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
 }
-.img-container .img-bottom {
-  float: right;
+
+.grid-container > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.grid-container > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
+.grid-container > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+}
+
+.grid-container > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.grid-container > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.grid-container > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+
+.grid-container > *:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+
+.grid-container > *:nth-child(10) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 9;
+}
+.grid-container .item-1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+.grid-container .item-2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+.grid-container img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.grid-container img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /*Search section*/
@@ -269,6 +315,7 @@ nav {
 /*What we do */
 .what-we-do {
   background-image: url(/images/house-img.png);
+  background-size: cover;
   height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,7 +326,7 @@ nav {
           align-items: center;
 }
 .what-we-do .text-block {
-  background-color: rgba(51, 51, 51, 0.8);
+  background-color: rgba(51, 51, 51, 0.9);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -296,6 +343,7 @@ nav {
 /*Travel with us*/
 .travel-with-us {
   background-image: url(/images/travel-with-us-img.png);
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,6 +375,7 @@ nav {
 /*Contact us*/
 .contact-us {
   background-image: url(/images/contact-background.png);
+  background-size: cover;
   height: 730px;
   width: 100%;
   display: -webkit-box;
@@ -414,6 +463,27 @@ footer .some-icons {
   margin-top: 20px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  cursor: pointer;
+}
+footer .some-icons .fa-facebook-f:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+footer .some-icons .fa-twitter:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+footer .some-icons .fa-linkedin-in:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+footer .some-icons .fa-youtube:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+footer .some-icons .fa-pinterest:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 footer .some-icons span {
   color: #5474FD;
