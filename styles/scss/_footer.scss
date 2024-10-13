@@ -1,0 +1,50 @@
+footer {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 193px;
+        height: auto;
+    }
+
+    h4 {
+        font-family: $secondaryFont;
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .some-icons {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-around;
+        cursor: pointer;
+
+        .fa-facebook-f:hover {
+            transform: scale(1.2);
+        }
+
+        .fa-twitter:hover {
+            transform: scale(1.2);
+        }
+
+        .fa-linkedin-in:hover {
+            transform: scale(1.2);
+        }
+
+        .fa-youtube:hover {
+            transform: scale(1.2);
+        }
+
+        .fa-pinterest:hover {
+            transform: scale(1.2);
+        }
+
+        span {
+            color: $mainColor;
+        }
+    }
+
+}

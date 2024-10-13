@@ -1,5 +1,7 @@
 @import 'variables';
 @import 'text-block';
+@import 'footer';
+@import 'navbar';
 
 * {
     box-sizing: border-box;
@@ -11,104 +13,10 @@ body {
     color: #fff;
     background-color: $backgroundColor;
     height: 100vh;
-    margin: 10px;
 }
 
 /*Nav section*/
 
-nav {
-    height: 820px;
-    width: auto;
-}
-
-.banner-container {
-    background-image: url(/images/banner-img.png);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-
-    img {
-        width: 324px;
-        margin: 20px;
-    }
-
-    h3 {
-        font-family: $secondaryFont;
-        font-size: 22px;
-        letter-spacing: 3;
-    }
-
-    .scroll {
-        font-family: $secondaryFont;
-        font-size: 14px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-top: 100px;
-
-            i {
-                cursor: pointer;
-            }
-    }
-
-}
-
-.form {
-    margin-top: 30px;
-    display: flex;
-
-    .input-field {
-        width: 503px;
-        height: 53px;
-        text-align: center;
-        border: none;
-        font-family: $primaryFont;
-    }
-
-    button {
-        width: 153px;
-        color: black;
-        background-color: $mainColor;
-        color: $fontColor;
-        font-family: $primaryFont;
-        border: 1px solid $fontColor;
-
-            &:hover {
-                background-color: $hoverColor;
-                color: $mainColor;
-                transition: 0.3s;
-            }
-    }
-}
-
-.navbar {
-    background-color: $mainColor;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 83px;
-
-    .nav-links li {
-        display: inline-block;
-        justify-content: space-between;
-        list-style: none;
-        text-decoration: none;
-        font-size: 16px;
-        gap: 20px;  
-
-            a {
-                text-decoration: none;
-                justify-content: flex-end;
-                font-size: 16px;
-                color: $fontColor;
-                text-decoration: none;     
-            }
-
-    }
-}
 
 /*Who we are section */
 
@@ -288,7 +196,7 @@ nav {
         align-items: center;
         margin: 20px;
         width: 60%;
-        height: auto;
+        max-height: 290px;
 
         .contact-text {
             margin: 20px;
@@ -303,6 +211,7 @@ nav {
                 line-height: 1.5;
                 font-size: 16px;
                 margin-top: 10px;
+                width: auto;
             }
 
             i {
@@ -320,63 +229,66 @@ nav {
 
 /*Footer*/
 
-footer {
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    img {
-        width: 193px;
-        height: auto;
-    }
+/*Media queries*/
 
-    h4 {
-        font-family: $secondaryFont;
-        font-size: 16px;
-        margin-top: 10px;
-        text-align: center;
-    }
-
-    .some-icons {
-        display: flex;
-        margin-top: 20px;
-        justify-content: space-around;
-        cursor: pointer;
-
-        .fa-facebook-f:hover {
-            transform: scale(1.2);
-        }
-
-        .fa-twitter:hover {
-            transform: scale(1.2);
-        }
-
-        .fa-linkedin-in:hover {
-            transform: scale(1.2);
-        }
-
-        .fa-youtube:hover {
-            transform: scale(1.2);
-        }
-
-        .fa-pinterest:hover {
-            transform: scale(1.2);
-        }
-
-        span {
-            color: $mainColor;
-        }
-
+@media screen and (max-width: 1000px) {
+    body {
 
     }
 
+    nav {
+        width: 100%;
+    }
 
+    .nav-links {
+        justify-self: flex-end;
+    }
 
-    
+    .who-we-are {
+
+        .container {
+           margin-left: 10px;
+           margin-right: 10px;
+        }
+    }
+
+    .search-section {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .what-we-do {
+        padding-left: 10%;
+    }
+
+    .travel-with-us {
+        padding-right: 10%;
+    }
+
+    .contact-us {
+
+        .contact-container {
+            padding-top: 20px;
+            margin: 0;
+            max-width: 80%; 
+        }
+
+        .contact-text {
+            margin: 0;
+            display: block;
+
+            p {
+                font-size: 12px;
+                max-width: 100%;
+            }
+        }
+
+        img {
+            max-width: 80%; 
+        }
+    }
 }
-
-
 
 
 
