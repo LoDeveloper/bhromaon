@@ -189,8 +189,8 @@ nav {
         
     i {
         color: #496BFE;
-        height: 60px;
-        width: 60px;
+        font-size: 60px;
+        margin-bottom: 20px;
     }
 }
 
@@ -200,8 +200,8 @@ nav {
         
     i {
         color: #FF6363;
-        height: 60px;
-        width: 60px;
+        font-size: 60px;
+        margin-bottom: 20px;
     }
 }
 
@@ -211,8 +211,8 @@ nav {
         
     i {
         color: #00A2FF;
-        height: 60px;
-        width: 60px;
+        font-size: 60px;
+        margin-bottom: 20px;
     }
 }
 
@@ -270,9 +270,94 @@ nav {
 }
 
 
+/*Contact us*/
+
+.contact-us {
+    background-image: url(/images/contact-background.png);
+    height: 730px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        text-align: center;
+        font-family: $primaryFont;
+        font-size: 36px;
+        margin-top: 5%;
+    }
+
+    .contact-container {
+        background-color: $backgroundColor;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+        width: 60%;
+        height: auto;
+
+        .contact-text {
+            margin: 20px;
+
+            h3 {
+                font-family: $secondaryFont;
+                font-size: 20px;
+            }
+
+            p {
+                font-family: $secondaryFont;
+                line-height: 1.5;
+                font-size: 16px;
+                margin-top: 10px;
+            }
+
+            i {
+                color: $mainColor;
+                font-size: 36px;
+            }
+        }
+
+        img {
+            display: flex;
+            width: auto;
+        }
+    }
+}
+
+/*Footer*/
+
+footer {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 193px;
+        height: auto;
+    }
+
+    h4 {
+        font-family: $secondaryFont;
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .some-icons {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-around;
+
+        span {
+            color: $mainColor;
+        }
+    }
 
 
 
+    
+}
 
 
 
