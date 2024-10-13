@@ -8,6 +8,7 @@
 
 body {
     color: #fff;
+    height: 100vh;
 }
 
 /*Nav section*/
@@ -36,6 +37,19 @@ nav {
         letter-spacing: 3;
     }
 
+    .scroll {
+        font-family: $secondaryFont;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+
+            i {
+                cursor: pointer;
+            }
+    }
+
 }
 
 .form {
@@ -46,15 +60,69 @@ nav {
         width: 503px;
         height: 53px;
         text-align: center;
+        border: none;
         font-family: $primaryFont;
-        background-color: $mainColor;
     }
 
     button {
         width: 153px;
+        color: black;
+        background-color: $mainColor;
+        color: $fontColor;
+        font-family: $primaryFont;
+        border: 1px solid $fontColor;
+
+            &:hover {
+                background-color: $hoverColor;
+                color: $mainColor;
+                transition: 0.3s;
+            }
     }
 }
 
+.navbar {
+    background-color: $mainColor;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 83px;
+
+    .nav-links li {
+        display: inline-block;
+        justify-content: space-between;
+        list-style: none;
+        text-decoration: none;
+        font-size: 16px;
+        gap: 20px;  
+
+            a {
+                text-decoration: none;
+                justify-content: flex-end;
+                font-size: 16px;
+                color: $fontColor;
+                text-decoration: none;     
+            }
+
+    }
+}
+
+
+
+.who-we-are {
+    background-image: url(/images/who-we-are-img.png);
+    padding-top: 100px;
+    height: 685px;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .text-block {
+
+            }
+        }
+}
 
 /*Fonts
 

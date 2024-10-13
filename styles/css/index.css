@@ -7,6 +7,7 @@
 
 body {
   color: #fff;
+  height: 100vh;
 }
 
 /*Nav section*/
@@ -41,6 +42,22 @@ nav {
   font-size: 22px;
   letter-spacing: 3;
 }
+.banner-container .scroll {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding-top: 100px;
+}
+.banner-container .scroll i {
+  cursor: pointer;
+}
 
 .form {
   margin-top: 30px;
@@ -52,13 +69,72 @@ nav {
   width: 503px;
   height: 53px;
   text-align: center;
+  border: none;
   font-family: "Aleo", serif;
-  background-color: #5474FD;
 }
 .form button {
   width: 153px;
+  color: black;
+  background-color: #5474FD;
+  color: #fff;
+  font-family: "Aleo", serif;
+  border: 1px solid #fff;
+}
+.form button:hover {
+  background-color: #041561;
+  color: #5474FD;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
+.navbar {
+  background-color: #5474FD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 83px;
+}
+.navbar .nav-links li {
+  display: inline-block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+  font-size: 16px;
+  gap: 20px;
+}
+.navbar .nav-links li a {
+  text-decoration: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.who-we-are {
+  background-image: url(/images/who-we-are-img.png);
+  padding-top: 100px;
+  height: 685px;
+}
+.who-we-are .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*Fonts
 
 
