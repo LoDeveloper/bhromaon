@@ -7,6 +7,7 @@
 
 body {
   color: #fff;
+  background-color: #333333;
   height: 100vh;
 }
 
@@ -192,6 +193,50 @@ nav {
 }
 .img-container .img-bottom {
   float: right;
+}
+
+/*Search section*/
+.search-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 340px;
+}
+
+.icon-search {
+  font-family: "Aleo", serif;
+  font-size: 36px;
+}
+.icon-search i {
+  color: #496BFE;
+  height: 60px;
+  width: 60px;
+}
+
+.icon-select {
+  font-family: "Aleo", serif;
+  font-size: 36px;
+}
+.icon-select i {
+  color: #FF6363;
+  height: 60px;
+  width: 60px;
+}
+
+.icon-book {
+  font-family: "Aleo", serif;
+  font-size: 36px;
+}
+.icon-book i {
+  color: #00A2FF;
+  height: 60px;
+  width: 60px;
 }
 
 /*Fonts
