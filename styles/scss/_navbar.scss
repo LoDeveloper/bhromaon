@@ -52,12 +52,11 @@ nav {
 
     button {
         width: 153px;
-        color: black;
         background-color: $mainColor;
         color: $fontColor;
         font-family: $primaryFont;
+        gap: 10px;
         border: 1px solid $fontColor;
-
             &:hover {
                 background-color: $hoverColor;
                 color: $mainColor;
@@ -94,10 +93,9 @@ nav {
   
         a {
           color: $fontColor;
-          transition: 0.3;
+          transition: 0.3s;
           
             &:hover {
-                text-decoration: underline;
                 color: $hoverColor;
             }
       }

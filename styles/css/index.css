@@ -144,10 +144,10 @@ nav {
 }
 .form button {
   width: 153px;
-  color: black;
   background-color: #5474FD;
   color: #fff;
   font-family: "Aleo", serif;
+  gap: 10px;
   border: 1px solid #fff;
 }
 .form button:hover {
@@ -194,11 +194,10 @@ nav {
 }
 .navbar a {
   color: #fff;
-  -webkit-transition: 0.3;
-  transition: 0.3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .navbar a:hover {
-  text-decoration: underline;
   color: #041561;
 }
 .navbar i {
