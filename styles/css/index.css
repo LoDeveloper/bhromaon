@@ -201,6 +201,9 @@ nav {
   text-decoration: underline;
   color: #041561;
 }
+.navbar i {
+  display: none;
+}
 
 * {
   -webkit-box-sizing: border-box;
@@ -467,8 +470,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -550,9 +551,11 @@ body {
     padding-right: 10%;
   }
   .contact-us .contact-container {
-    padding-top: 20px;
+    display: block;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100%;
     margin: 0;
-    max-width: 80%;
   }
   .contact-us .contact-text {
     margin: 0;
@@ -563,7 +566,7 @@ body {
     max-width: 100%;
   }
   .contact-us img {
-    max-width: 80%;
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -576,9 +579,15 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     text-align: center;
+    padding: 10px;
   }
   .navbar .nav-links {
     display: none;
+  }
+  .navbar .nav-links i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .form {
     width: 70%;
@@ -598,12 +607,18 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 5%;
-    gap: 10px;
+  }
+  .who-we-are .container .text-block {
+    width: 70%;
+    padding-top: 20px;
   }
   .who-we-are .container .text-block h3 {
+    padding-top: 40px;
     font-size: 18px;
   }
   .who-we-are .container .text-block p {
@@ -621,12 +636,15 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .who-we-are .container .grid-container img {
     width: 80%;
   }
   .who-we-are .container .main-btn {
-    width: 80%;
+    width: 60%;
   }
   .what-we-do {
     display: -webkit-box;

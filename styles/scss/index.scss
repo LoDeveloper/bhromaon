@@ -192,7 +192,6 @@ body {
     .contact-container {
         background-color: $backgroundColor;
         display: flex;
-        justify-content: space-around;
         align-items: center;
         margin: 20px;
         width: 60%;
@@ -307,9 +306,10 @@ body {
     .contact-us {
 
         .contact-container {
-            padding-top: 20px;
+            display: block;
+            flex-wrap: wrap;
+            height: 100%;
             margin: 0;
-            max-width: 80%; 
         }
 
         .contact-text {
@@ -323,7 +323,7 @@ body {
         }
 
         img {
-            max-width: 80%; 
+            max-width: 100%; 
         }
     }
 }
@@ -338,10 +338,17 @@ body {
         flex-direction: flex;
         justify-content: space-between;
         text-align: center;
+        padding: 10px;
 
         .nav-links {
             display: none;
+
+            i {
+                display:flex;
+    
+            }
         }
+
     }
 
     .form {
@@ -360,15 +367,18 @@ body {
     .who-we-are {
         height: auto;
         padding-top: 20px;
+
         .container {
             display: flex;
+            align-items: center;
             flex-wrap: wrap;
-            margin: 5%;
-            gap: 10px;
 
             .text-block {
+                width: 70%;
+                padding-top: 20px;
 
                 h3 {
+                    padding-top: 40px;
                     font-size: 18px;
                 }
 
@@ -376,11 +386,13 @@ body {
                     font-size: 12px;
                 }
             }
+
             .grid-container {
                 width: 80%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: center;
     
                 img {
                     width: 80%;
@@ -388,7 +400,7 @@ body {
             }
 
             .main-btn {
-                width: 80%;
+                width: 60%;
 
             }
         }
