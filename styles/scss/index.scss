@@ -231,6 +231,40 @@ nav {
         height: 371px;
         width: 540px;
         padding: 30px;
+
+            h5 {
+                margin-bottom: 20px;
+                font-family: $secondaryFont;
+                font-size: 20px;
+            }
+    }
+
+}
+
+/*Travel with us*/
+
+.travel-with-us {
+    background-image: url(/images/travel-with-us-img.png);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20%;
+    height: 700px;
+    margin: auto;
+
+    .text-block {
+        background-color: rgba(51, 51, 51, 0.8);
+        align-items: center;
+        height: 371px;
+        width: 540px;
+        padding: 30px;
+
+            h5 {
+                margin-bottom: 20px;
+                font-family: $secondaryFont;
+                font-size: 20px;
+            }
+
     }
 
 }

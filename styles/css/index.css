@@ -287,6 +287,42 @@ nav {
   width: 540px;
   padding: 30px;
 }
+.what-we-do .text-block h5 {
+  margin-bottom: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+}
+
+/*Travel with us*/
+.travel-with-us {
+  background-image: url(/images/travel-with-us-img.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 20%;
+  height: 700px;
+  margin: auto;
+}
+.travel-with-us .text-block {
+  background-color: rgba(51, 51, 51, 0.8);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 371px;
+  width: 540px;
+  padding: 30px;
+}
+.travel-with-us .text-block h5 {
+  margin-bottom: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+}
 
 /*Fonts
 
